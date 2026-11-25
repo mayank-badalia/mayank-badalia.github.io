@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mayank Badalia · AI and Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Mayank Badalia, a first-year B.Tech CSE (AI &amp; ML) student in Pune building multi-agent AI systems, APIs and full-stack applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+
+<header class="rail">
+  <h1 class="name">Mayank<br>Badalia</h1>
+  <p class="role">AI and full-stack developer. First-year B.Tech CSE (AI &amp; ML), Pune.</p>
+  <nav aria-label="Sections">
+    <ol>
+      <li><a href="#about"><span>01</span>About</a></li>
+      <li><a href="#skills"><span>02</span>Skills</a></li>
+      <li><a href="#contributions"><span>03</span>Open source</a></li>
+      <li><a href="#projects"><span>04</span>Projects</a></li>
+      <li><a href="#education"><span>05</span>Education</a></li>
+      <li><a href="#contact"><span>06</span>Contact</a></li>
+    </ol>
+  </nav>
+</header>
+
+<main id="main">
+
+<section id="about" aria-labelledby="about-h">
+  <span class="eyebrow">01</span>
+  <h2 id="about-h">About</h2>
+  <p class="lede">I'm a first-year B.Tech student in Computer Science and Engineering (AI &amp; ML) at Ajeenkya D. Y. Patil University, Pune, graduating in 2030. I build multi-agent AI systems, backend APIs and full-stack applications, with projects in financial verification and supply-chain planning. I founded We Code Coders, a developer community where I lead software and organise hackathons, and Inkloom, an early-access AI branding platform. I'm looking for AI engineering and full-stack software engineering internships where I can build and test systems around real workflows.</p>
+</section>
+
+<section id="skills" aria-labelledby="skills-h">
+  <span class="eyebrow">02</span>
+  <h2 id="skills-h">Skills</h2>
+  <p class="meta">Each row links to code where I used the skill.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Area</th><th scope="col">Skills</th><th scope="col">Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <th scope="row">Programming and APIs</th>
+          <td>Python, FastAPI</td>
+          <td><a href="https://github.com/mayank-badalia/revenueproof/blob/main/backend/app/main.py">RevenueProof API entry point</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Frontend and full-stack</th>
+          <td>TypeScript, React, Next.js, Tailwind CSS</td>
+          <td><a href="https://github.com/mayank-badalia/revenueproof/tree/main/frontend">RevenueProof frontend</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Applied AI</th>
+          <td>Multi-agent orchestration, Gemma via the Gemini API, structured LLM output</td>
+          <td><a href="https://github.com/mayank-badalia/PurposeBound-Treasury/blob/main/src/lib/agents.ts">PurposeBound review agents</a><br><a href="https://github.com/mayank-badalia/TwinCouncil/blob/main/backend/app/llm/cerebras.py">TwinCouncil Cerebras client</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Optimization and simulation</th>
+          <td>OR-Tools CP-SAT, SimPy</td>
+          <td><a href="https://github.com/mayank-badalia/TwinCouncil/tree/main/backend">TwinCouncil backend</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Data and infrastructure</th>
+          <td>SQL, PostgreSQL row-level security, Redis, Neo4j, Docker Compose</td>
+          <td><a href="https://github.com/mayank-badalia/revenueproof/blob/main/backend/app/core/schema_init.py">RevenueProof database policies</a><br><a href="https://github.com/mayank-badalia/revenueproof/blob/main/infra/docker-compose.yml">Service configuration</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Testing and tooling</th>
+          <td>Zsh, Python test runners, regression and mutation testing</td>
+          <td><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/119/files">nvm regression tests</a><br><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/123/files">dash mutation checks</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="contributions" aria-labelledby="contrib-h">
+  <span class="eyebrow">03</span>
+  <h2 id="contrib-h">S&amp;AI open-source contributions</h2>
+  <p>Ten pull requests, one per assigned task, in the course repository <a href="https://github.com/S-AI-Projects/ohmyzsh">S-AI-Projects/ohmyzsh</a>. All were opened on 23 November 2026 from my fork, <a href="https://github.com/mayank-badalia/ohmyzsh">mayank-badalia/ohmyzsh</a>, because course members do not have push access to the organisation repository. Each pull request adds a zsh fixture test with a Python check that fails on any broken assertion.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Task ID</th><th scope="col">Pull request</th><th scope="col">What I changed and why</th></tr></thead>
+      <tbody>
+        <tr><td class="id">R14-T031</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/114">#114 · ufw</a></td><td>Added tests for command completion and for active and inactive rule listing, using a stub <code>ufw</code>. Fixed the README syntax so it passes the repository's <code>zsh -n</code> check.</td></tr>
+        <tr><td class="id">R14-T032</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/115">#115 · fzf</a></td><td>Tested the setup functions against fake installations and stub executables, and documented the lookup order. Missing and too-old installations are now reproducible in tests.</td></tr>
+        <tr><td class="id">R14-T033</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/116">#116 · emacs</a></td><td>Tested alias registration, <code>EDITOR</code> handling and argument boundaries. Corrected the README to use the launcher variable the plugin actually exports.</td></tr>
+        <tr><td class="id">R14-T034</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/117">#117 · node</a></td><td>Tested the default docs page and literal wildcard arguments from a directory with spaces, to prove shell expansion does not alter the argument. Documented the quoting rule.</td></tr>
+        <tr><td class="id">R14-T035</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/118">#118 · bundler</a></td><td>Tested aliases, project binstubs and fallback execution with stub binaries, covering the cases where Bundler or a Gemfile is missing.</td></tr>
+        <tr><td class="id">R14-T036</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/119">#119 · nvm</a></td><td>Moved the one-shot autoload helper's cleanup into a single statement. Ran the same 20 characterization assertions before and after to show eager and lazy loading behave identically.</td></tr>
+        <tr><td class="id">R14-T037</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/120">#120 · nmap</a></td><td>Added a README usage example and a test that reads the command from the README and runs it through the alias with a stub, so the documentation cannot drift.</td></tr>
+        <tr><td class="id">R14-T038</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/121">#121 · eza</a></td><td>Reached the missing-executable failure branch in a test and checked its exit status. Added a troubleshooting section built from the diagnostic users actually see.</td></tr>
+        <tr><td class="id">R14-T039</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/122">#122 · sudo</a></td><td>Added an isolated test entry point for the command-line widget covering key bindings, toggling and editor aliases. It runs without a live terminal and propagates failures.</td></tr>
+        <tr><td class="id">R14-T040</td><td class="pr"><a href="https://github.com/S-AI-Projects/ohmyzsh/pull/123">#123 · dash</a></td><td>Added a completion regression test. The check applies two deliberate one-condition changes to a copy of the plugin and fails unless the test rejects both.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="projects" aria-labelledby="projects-h">
+  <span class="eyebrow">04</span>
+  <h2 id="projects-h">Projects</h2>
+
+  <article class="project">
+    <h3>RevenueProof</h3>
+    <p class="meta">August 2026 · Solo project</p>
+    <dl>
+      <dt>Problem</dt>
+      <dd>An investor told a startup earned ₹1.5 crore has to open several systems to check it: contracts, invoices, payments, refunds and bank receipts. Doing that by hand for every rupee is slow and easy to get wrong.</dd>
+      <dt>Solution</dt>
+      <dd>RevenueProof pulls records from Zoho Books, Razorpay, HubSpot, Google Drive and bank CSVs, then rebuilds the evidence trail for each rupee. Money with a complete trail is proven. Money with a broken trail is reported with the missing link named. Reconciliation uses exact integer-paise arithmetic, disputed classifications go to a human reviewer, and a hash-chained audit log records every decision.</dd>
+      <dt>Stack</dt>
+      <dd>Python, FastAPI, Next.js, React, TypeScript, Tailwind CSS, PostgreSQL with row-level security, Neo4j, Redis, ChromaDB, OCR, OR-Tools.</dd>
+      <dt>My contribution</dt>
+      <dd>Sole author: the verification engine, deterministic money logic, per-workspace data isolation and audit trail.</dd>
+    </dl>
+    <div class="links">
+      <a href="https://github.com/mayank-badalia/revenueproof">Repository and documentation</a>
+      <a href="https://revenueproof.vercel.app">Live demo</a>
+    </div>
+  </article>
+
+  <article class="project">
+    <h3>TwinCouncil</h3>
+    <p class="meta">August 2026 · Solo project</p>
+    <dl>
+      <dt>Problem</dt>
+      <dd>When a supplier delays a critical component, planners must decide quickly between recovery plans while inventory limits, costs and delivery estimates are all uncertain.</dd>
+      <dt>Solution</dt>
+      <dd>A multi-agent workflow decides whether a delay is a real risk, investigates uncertain evidence, and generates four deliberately different recovery plans. OR-Tools CP-SAT checks each plan is feasible. A Red-Team agent attacks each plan's assumptions, and a SimPy digital twin tests every plan against every attack. The most resilient plan is chosen by a deterministic score, and a human approves when policy requires it. Every step is written to a hash-linked audit ledger.</dd>
+      <dt>Stack</dt>
+      <dd>Python, FastAPI, WebSockets, Celery, React, TypeScript, PostgreSQL, Neo4j, Redis, Cerebras, OR-Tools, SimPy.</dd>
+      <dt>My contribution</dt>
+      <dd>Sole author: the agent workflow, the optimization and simulation pipeline, and the audit ledger. In a simulated incident the selected plan protected ₹44.3 lakh of production value.</dd>
+    </dl>
+    <div class="links"><a href="https://github.com/mayank-badalia/TwinCouncil">Repository and documentation</a></div>
+  </article>
+
+  <article class="project">
+    <h3>PurposeBound Treasury</h3>
+    <p class="meta">October 2026 · Hackathon team project (Track 2, Gemma)</p>
+    <dl>
+      <dt>Problem</dt>
+      <dd>NGOs, student bodies and sponsored events cannot easily show sponsors that money was spent for the purpose it was given for.</dd>
+      <dt>Solution</dt>
+      <dd>Gemma turns a funding agreement into enforceable spending rules. Each expense then passes four review agents (policy, evidence, budget, auditor) before a person approves it. Supporting documents stay in Google Drive, and only SHA-256 hashes are anchored. Payouts run through Razorpay sandbox Orders; vendor transfers were simulated in the demo.</dd>
+      <dt>Stack</dt>
+      <dd>Next.js, React, TypeScript, Tailwind CSS, Gemma, Google Drive API, Razorpay sandbox.</dd>
+      <dt>My contribution</dt>
+      <dd>Main developer: 18 of the repository's 19 commits, covering the rule builder, review agents and integrations.</dd>
+    </dl>
+    <div class="links"><a href="https://github.com/mayank-badalia/PurposeBound-Treasury">Repository and documentation</a></div>
+  </article>
+
+  <h3 style="margin-top:2rem">Other builds</h3>
+  <ul class="others">
+    <li><a href="https://github.com/mayank-badalia/ai-news-bot">AI News Bot</a>: a Telegram bot that watches 25 AI, startup and funding feeds and sends only model releases, tools, launches, funding rounds and papers.</li>
+    <li><a href="https://github.com/mayank-badalia/miniledger">MiniLedger</a>: a web app for tracking money lent to friends and its repayments, with a Node, TypeScript and PostgreSQL API.</li>
+    <li><a href="https://github.com/mayank-badalia/cave-portfolio">Cave Portfolio</a>: an interactive portfolio rendered as one continuous procedural 3D cave in the browser.</li>
+  </ul>
+</section>
+
+<section id="education" aria-labelledby="edu-h">
+  <span class="eyebrow">05</span>
+  <h2 id="edu-h">Education and achievements</h2>
+  <ul class="timeline">
+    <li>
+      <span class="when">2026 – 2030 (expected)</span>
+      <div>
+        <h3>B.Tech, Computer Science and Engineering (AI &amp; ML)</h3>
+        <p>Ajeenkya D. Y. Patil University, Pune. Currently in the first year.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">6 November 2025</span>
+      <div>
+        <h3>First place, Tech Forge Hackathon 2025</h3>
+        <p>With Sarveshwar Girish, placed first among 89 teams and won a ₹15,000 team prize. Recorded in the school newsletter, <a href="https://bvbchennai.org/uploads/patrikka/1768813684_BhavansPatrikaa_Issue18_%20Jan26.pdf#page=5">Bhavan's Patrikaa, issue 18, page 5</a>.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2026 – present</span>
+      <div>
+        <h3>Founder and Software Lead, We Code Coders</h3>
+        <p>I lead a five-person core team that builds the community's Next.js and React event platform, with event pages, poster generation and QR-verifiable certificates. The community has 10,000+ members, and one campaign drew 2,500+ registrations across 1,500+ teams in six days. <a href="https://wecodecoders.in/about">wecodecoders.in</a></p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2026 – present</span>
+      <div>
+        <h3>Founder, Inkloom</h3>
+        <p>I lead product, engineering and user acquisition for an AI logo and brand-identity platform, which reached 1,000+ users in its first week. It is in early access, with accounts, access codes and a credit ledger live and logo generation next. <a href="https://inkloom.art">inkloom.art</a> · <a href="https://github.com/Inkloom-art/inkloom">Public repository</a></p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="contact" aria-labelledby="contact-h">
+  <span class="eyebrow">06</span>
+  <h2 id="contact-h">Contact</h2>
+  <p>Open to AI engineering and full-stack internships. Email is the fastest way to reach me.</p>
+  <dl class="contact">
+    <div><dt>Email</dt><dd><a href="mailto:mayankbadalia874@gmail.com">mayankbadalia874@gmail.com</a></dd></div>
+    <div><dt>GitHub</dt><dd><a href="https://github.com/mayank-badalia">github.com/mayank-badalia</a>, the account that opened the S&amp;AI pull requests above</dd></div>
+    <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mayankbadalia">linkedin.com/in/mayankbadalia</a></dd></div>
+  </dl>
+</section>
+
+</main>
+
+<footer>© 2026 Mayank Badalia · Pune, India</footer>
+</div>
+</body>
+</html>
